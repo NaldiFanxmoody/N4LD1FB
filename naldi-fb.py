@@ -154,10 +154,11 @@ def back():
 def banner():
 	clear()
 	alvino_xy(f'''\t{asu}                                               
-▀▄░▄▀ ▀█─█▀ ─▀─ █▀▀▄ ─▀─ █▀▀█ █▀▀
-─░█── ─█▄█─ ▀█▀ █──█ ▀█▀ █──█ ▀▀█
-▄▀░▀▄ ──▀── ▀▀▀ ▀▀▀─ ▀▀▀ ▀▀▀▀ ▀▀▀  	
-{m} ☯︎ {k} ☯︎ {h} ☯︎ {sir} Recode : KING_RIZKI_378{x}{m} ☯︎ {k} ☯︎ {h} ☯︎ {x}''')
+┏━┳┓╋╋╋╋╋┏┳┓┏┳┓
+┃┃┃┣━┓┏┓┏┛┣┫┃┏╋━┳━┳━┓
+┃┃┃┃╋┗┫┗┫╋┃┃┃┗┫┻┫━┫┻┫
+┗┻━┻━━┻━┻━┻┛┗┻┻━┻━┻━┛
+{m} ☯︎ {k} ☯︎ {h} ☯︎ {sir} DEVELOPED BY : Naldi Fanxmoody{x}{m} ☯︎ {k} ☯︎ {h} ☯︎ {x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -182,9 +183,9 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\t( ͠° ͟ʖ ͡°) SALAM DARI PENGASINAN : [green]🇨 🇴 🇰 🇮  [white] (;´༎ຶٹ༎ຶ`)'))
+		cetak(nel('\t( ͠° ͟ʖ ͡°) DEVELOPED BY : [green]🇨 🇴 🇰 🇮  [white] Naldi Fanxmoody'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Cookies lu ngab :{asu} ')
+		cookie=input(f'  [{h}•{x}] Masukkan Cookie :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
